@@ -1,13 +1,16 @@
 // gta6-meme-x-01 entry program (Node 22, standard library only).
 //
-// The entry itself is the X post: a GTA 6 meme whose picture shows the
-// make.fun ghost driving a pink convertible through a neon Vice City-style
-// sunset, posted from a public X account with make.fun (a link and a tag of
-// @makefunai) and the entrant's play code in its text. This program hands
-// that post in: it reads POST.json from the repository root, checks it is a
-// small JSON object naming one X post address, and copies it to the output
-// directory where the gate reads it. Nothing this program writes is judged;
-// the house reads the post itself from X.
+// The entry itself is the X post: a GTA 6 meme in the form of a Leonida
+// parking ticket — "PARKING VIOLATION: waiting 13 years for GTA VI" —
+// posted from a public X account with make.fun (a link and a tag of
+// @makefunai) and the entrant's play code in its text. The ticket picture
+// is code-composited with the official make.fun ghost mark from the press
+// kit; no Rockstar art, no game files, no mods. This program hands that
+// post in: it reads POST.json from the repository root, checks it is a
+// small JSON object naming exactly one X post address, and copies it to
+// the output directory where the gate reads it, then verifies the copy
+// byte for byte. Nothing this program writes is judged; the house reads
+// the post itself from X.
 //
 // Local check:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
@@ -35,11 +38,19 @@ if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
   process.exit(1);
 }
 
+// POST.json must name exactly one thing: the post, under the key "url".
+// Any extra key is a mistake, so refuse it here instead of at the gate.
+const keys = Object.keys(parsed);
+if (keys.length !== 1 || keys[0] !== 'url') {
+  console.error(`${POST_FILE} must hold exactly one key, "url".`);
+  process.exit(1);
+}
+
 // The gate only accepts an X post address: https://x.com/<handle>/status/<id>
 // (or the same on twitter.com, with the id digits only). Refuse anything else
 // here, before the entry is submitted, so a bad address is caught locally.
 const url = (parsed as { url?: unknown }).url;
-const postPattern = /^https:\/\/(www\.|mobile\.)?(x\.com|twitter\.com)\/[^/]+\/status\/\d+$/;
+const postPattern = /^https:\/\/(?:www\.|mobile\.)?(?:x\.com|twitter\.com)\/([^/]+)\/status\/(\d+)$/;
 if (typeof url !== 'string' || !postPattern.test(url)) {
   console.error(`${POST_FILE} must name one X post address, https://x.com/<handle>/status/<id>.`);
   process.exit(1);
@@ -47,6 +58,14 @@ if (typeof url !== 'string' || !postPattern.test(url)) {
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 copyFileSync(source, target);
-const match = url.match(/^https:\/\/(?:www\.|mobile\.)?(?:x\.com|twitter\.com)\/([^/]+)\/status\/(\d+)$/);
-console.log(`Handed in ${POST_FILE} (${size} bytes) to ${target}.`);
+
+// Verify the hand-in: the copy must be byte for byte the file we checked.
+const copied = readFileSync(target);
+if (copied.length !== size || !copied.equals(readFileSync(source))) {
+  console.error(`Copy of ${POST_FILE} does not match the checked file.`);
+  process.exit(1);
+}
+
+const match = url.match(postPattern);
+console.log(`Handed in ${POST_FILE} (${size} bytes, verified) to ${target}.`);
 if (match) console.log(`Post: @${match[1]} status ${match[2]}.`);
