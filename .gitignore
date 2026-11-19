@@ -1,0 +1,5 @@
+# gta6-meme-x-01 entry
+node_modules/
+out/
+*.log
+.DS_Store
