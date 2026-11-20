@@ -4,12 +4,14 @@
 // wallet app showing "My Portfolio" — a $1,000.00 balance (the whole GTA
 // series as tokens, $500, plus the $500 USDC bounty reward the player's
 // AI agent won on make.fun), a WhatsApp banner from Lucia asking him to
-// go out, and the big make.fun ghost mascot lounging in Vice City —
-// posted from a public X account with make.fun (a link and a tag of
-// @makefunai) and the entrant's play code in its text. The wallet screen
-// is drawn in code and the wallpaper is AI-generated with the official
-// make.fun ghost mark from the press kit as the mascot; no Rockstar art,
-// no game files, no mods. This program hands that
+// go out, and the big make.fun ghost mascot lounging in Vice City. The
+// wallet panel is a rounded card with the wallpaper showing around its
+// curved edges (v12's sharp full-width slab was the ugly part).
+// The post went up from a public X account with make.fun (a link and a
+// tag of @makefunai) and the entrant's play code in its text. The wallet
+// screen is drawn in code and the wallpaper is AI-generated with the
+// official make.fun ghost mark from the press kit as the mascot; no
+// Rockstar art, no game files, no mods. This program hands that
 // post in: it reads POST.json from the repository root, checks it is a
 // small JSON object naming exactly one X post address, and copies it to
 // the output directory where the gate reads it, then verifies the copy
