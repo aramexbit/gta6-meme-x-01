@@ -1,12 +1,12 @@
 // gta6-meme-x-01 entry program (Node 22, standard library only).
 //
-// The entry itself is the X post: a GTA 6 meme in the form of a Leonida
-// Family Court divorce decree — "FINAL DECREE OF DISSOLUTION OF MARRIAGE"
-// between the gamer and "Waiting for GTA VI", after 4,811 days — posted
-// from a public X account with make.fun (a link and a tag of @makefunai)
-// and the entrant's play code in its text. The decree picture is
-// code-composited with the official make.fun ghost mark from the press
-// kit; no Rockstar art, no game files, no mods. This program hands that
+// The entry itself is the X post: a GTA 6 meme in the form of a Vice City
+// Airlines boarding pass — Los Santos to Vice City, flight GTA VI 4811,
+// delayed 4,811 days — posted from a public X account with make.fun (a
+// link and a tag of @makefunai) and the entrant's play code in its text.
+// The boarding pass is code-composited with the official make.fun ghost
+// mark from the press kit as the airline's logo; no Rockstar art, no game
+// files, no mods. This program hands that
 // post in: it reads POST.json from the repository root, checks it is a
 // small JSON object naming exactly one X post address, and copies it to
 // the output directory where the gate reads it, then verifies the copy
