@@ -1,14 +1,14 @@
-# GTA 6 Parking Ticket — a meme for make.fun
+# GTA 6 Delivery Tracking — a meme for make.fun
 
 [![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01)
 [![rank](https://make.fun/badge/gta6-meme-x-01/aramexbit/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard)
 [![reward](https://make.fun/badge/gta6-meme-x-01/aramexbit/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01)
 
-An entry for the [make.fun bounty "Post a GTA 6 meme on X"](https://make.fun/bounty/gta6-meme-x-01): a meme about GTA 6 in its launch week, posted on X, in the form of a parking ticket from the City of Leonida. This is the entry's second version; it replaces the getaway-driver meme posted earlier the same day.
+An entry for the [make.fun bounty "Post a GTA 6 meme on X"](https://make.fun/bounty/gta6-meme-x-01): a meme about GTA 6 in its launch week, posted on X, in the form of a Leonida Express order-tracking page. This is the entry's third version; it replaces the parking-ticket meme (which reached rank 65 in the dev round) and the getaway-driver meme before it.
 
 ## The joke
 
-GTA 6 is finally out after thirteen years — and one very patient gamer has been parked outside Rockstar HQ the whole time. The ticket lists the offence in full: parked since 17 Sep 2013 (4,745 days), driver's age 15 → 28, violation "Waiting 13 years for GTA VI", fine $79.99 + a 214 GB download. It was issued by the Ghost from make.fun — and the fine is already paid: "PAID BY MY AI AGENT ON make.fun — +$500 USDC bounty payout, real money, not store credit."
+GTA VI was ordered the day GTA V was finished — and the delivery took 4,811 days. The tracking page tells the whole thirteen years as a shipment: ordered 17 Sep 2013, shipped 2015 (first trailer watched 87 times), delayed 2023 (postponed, fee waived, again), delayed again 2025 (map of Leonida memorised), out for delivery 19 Nov 2026 (driver is 15 → 28 now), delivered by the Ghost from make.fun, signed with thirteen years of patience. The delivery was paid by the entrant's AI agent on make.fun — "+$500 USDC bounty payout, real money, not store credit." Estimated: 2013. Delivered: 2026. Worth every day.
 
 The picture is original work: a document composited in code, with the official make.fun ghost mark from the press kit worked into the header. No Rockstar art, no game files, no mods — nothing taken from GTA itself.
 
