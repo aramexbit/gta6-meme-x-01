@@ -1,25 +1,24 @@
 // gta6-meme-x-01 entry program (Node 22, standard library only).
 //
-// The entry itself is the X post: a GTA 6 meme in the form of a crypto
-// wallet app showing "My Portfolio" — a $1,000.00 balance (the whole GTA
-// series as tokens, $500, plus the $500 USDC bounty reward the player's
-// AI agent won on make.fun), a WhatsApp banner from Lucia asking him to
-// go out, and the big make.fun ghost mascot lounging in Vice City. The
-// wallet panel is a rounded card with the wallpaper showing around its
-// curved edges (v12's sharp full-width slab was the ugly part), and at
-// the top of the panel, in big bold type, the punchline: "13 YEARS
-// WAITING — MY AI AGENT GOT PAID FIRST." (v13 left the joke implied;
-// v14 states it.)
+// The entry itself is the X post: a GTA 6 meme in the form of a State of
+// Leonida marriage certificate for Jason Duval and Lucia Caminos — with
+// the clothes swapped at the altar (Jason in the white bridal gown, veil
+// and bouquet; Lucia in the black tuxedo, bow tie and boutonniere), dated
+// launch day itself, Thursday 19 November 2026, in Vice City, Leonida,
+// after 4,811 days of waiting since GTA V (17 September 2013), filed by
+// the player's AI agent on make.fun, which already paid $500. The
+// certificate number, M-2026-1119-04811, carries the 4,811 days in it.
+// v19 replaces v14 (the portfolio, dev score 587,849, rank #2,059).
 // The post went up from a public X account with make.fun (a link and a
-// tag of @makefunai) and the entrant's play code in its text. The wallet
-// screen is drawn in code and the wallpaper is AI-generated with the
-// official make.fun ghost mark from the press kit as the mascot; no
-// Rockstar art, no game files, no mods. This program hands that
-// post in: it reads POST.json from the repository root, checks it is a
-// small JSON object naming exactly one X post address, and copies it to
-// the output directory where the gate reads it, then verifies the copy
-// byte for byte. Nothing this program writes is judged; the house reads
-// the post itself from X.
+// tag of @makefunai) and the entrant's play code in its text. The two
+// portraits are AI-generated and the certificate, its seals, its rings
+// and the small make.fun ghost seal are drawn in code; no Rockstar art,
+// no game files, no mods. This program hands that post in: it reads
+// POST.json from the repository root, checks it is a small JSON object
+// naming exactly one X post address, and copies it to the output
+// directory where the gate reads it, then verifies the copy byte for
+// byte. Nothing this program writes is judged; the house reads the post
+// itself from X.
 //
 // Local check:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts

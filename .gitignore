@@ -3,3 +3,4 @@ node_modules/
 out/
 *.log
 .DS_Store
+# v19 — marriage certificate entry (nothing new to ignore)
