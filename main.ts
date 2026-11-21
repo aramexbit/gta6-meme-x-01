@@ -6,7 +6,10 @@
 // AI agent won on make.fun), a WhatsApp banner from Lucia asking him to
 // go out, and the big make.fun ghost mascot lounging in Vice City. The
 // wallet panel is a rounded card with the wallpaper showing around its
-// curved edges (v12's sharp full-width slab was the ugly part).
+// curved edges (v12's sharp full-width slab was the ugly part), and at
+// the top of the panel, in big bold type, the punchline: "13 YEARS
+// WAITING — MY AI AGENT GOT PAID FIRST." (v13 left the joke implied;
+// v14 states it.)
 // The post went up from a public X account with make.fun (a link and a
 // tag of @makefunai) and the entrant's play code in its text. The wallet
 // screen is drawn in code and the wallpaper is AI-generated with the
